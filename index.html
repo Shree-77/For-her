@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>for you — a little place</title>
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="showDiff()">
+  <main>
+  
+
+  <div class="name-container">
+    <div class="name-text"><h1>Sanjana VenuGopal Raju</h1></div>
+    <div class="name-text">or should I call you ?</div>
+    <div class="name-text"><h1>My Sotta Manda</h1></div>
+  </div>
+
+<div class="sub-title">I love you, thank you for simply existing in my life</div>
+
+
+<div class="card">
+  
+  <div class="section-title">Time Together</div>
+
+  <div class="timer-boxes">
+    <div class="time-box">
+      <div class="time-number" id="years"></div>
+      <div class="time-label">Years</div>
+    </div>
+
+    <div class="time-box">
+      <div class="time-number" id="months"></div>
+      <div class="time-label">Months</div>
+    </div>
+
+    <div class="time-box">
+      <div class="time-number" id="days"></div>
+      <div class="time-label">Days</div>
+    </div>
+
+    <div class="time-box">
+      <div class="time-number" id="hours"></div>
+      <div class="time-label">Hours</div>
+    </div>
+
+    <div class="time-box">
+      <div class="time-number" id="minutes"></div>
+      <div class="time-label">Minutes</div>
+    </div>
+
+    <div class="time-box">
+      <div class="time-number" id="seconds"></div>
+      <div class="time-label">Seconds</div>
+    </div>
+  </div>
+
+  
+</div>
+
+<div class="analysis-card">
+
+  <div class="analysis-title">Instagram Chat Analysis</div>
+
+  <div class="analysis-block">
+    <div class="icon">💬</div>
+    <div>
+      <div class="metric-title">Total Messages</div>
+      <div class="metric-value">170,254</div>
+      <div class="metric-sub">(257.3/day)</div>
+    </div>
+  </div>
+
+  <div class="analysis-block">
+    <div class="icon">🏆</div>
+    <div>
+      <div class="metric-title">Top Sender</div>
+      <div class="metric-value">Shree</div>
+      <div class="metric-sub">86,021 messages</div>
+    </div>
+  </div>
+  <div class="analysis-block">
+    <div class="icon">⏰</div>
+    <div>
+      <div class="metric-title">Total Reels</div>
+      <div class="metric-value">70,254</div>
+      <div class="metric-sub">(15.3/day)</div>
+    </div>
+  </div>
+
+  <div class="analysis-block">
+    <div class="icon">⏰</div>
+    <div>
+      <div class="metric-title">Most Active Time</div>
+      <div class="metric-value">8 PM</div>
+      <div class="metric-sub">19,319 messages</div>
+    </div>
+  </div>
+
+  <div class="analysis-block">
+    <div class="metric-title">Participants</div>
+    <div class="bar-row">
+      <span>Shree</span>
+      <div class="bar"><div class="bar-fill" style="width:50.6%"></div></div>
+      <span class="percent">50.6%</span>
+    </div>
+    <div class="bar-row">
+      <span>Sanjana</span>
+      <div class="bar"><div class="bar-fill" style="width:49.5%"></div></div>
+      <span class="percent">49.5%</span>
+    </div>
+  </div>
+
+  <div class="analysis-block">
+    <div class="metric-title">Activity by Hour</div>
+   <div class="chart-wrapper">
+  <canvas id="hourChart"></canvas>
+</div> </div>
+
+
+    <div class="top-words-card">
+        <h2>Top Words</h2>
+        <ul class="word-list">
+             <li class="word-item">
+                <span class="word-name">💁‍♂️💁‍♂️💁‍♂️</span>
+                <span class="word-count">5,050 uses</span>
+            </li>
+            <li class="word-item">
+                <span class="word-name">Pehhhh</span>
+                <span class="word-count">4,245 uses</span>
+            </li>
+            <li class="word-item">
+                <span class="word-name">Sotta</span>
+                <span class="word-count">1,070 uses</span>
+            </li>
+             <li class="word-item">
+                <span class="word-name">😂😂😂</span>
+                <span class="word-count">1,050 uses</span>
+            </li>
+            <li class="word-item">
+                <span class="word-name">Rytuu</span>
+                <span class="word-count">920 uses</span>
+            </li>
+            <li class="word-item">
+                <span class="word-name">seri pa</span>
+                <span class="word-count">910 uses</span>
+            </li>
+             <li class="word-item">
+                <span class="word-name">Good Night </span>
+                <span class="word-count">250 uses</span>
+            </li>
+        </ul>
+</div>    
+<div class="analysis-block">
+    <div class="top-emojis-card">
+        <h2 class="card-title">
+            <span role="img" aria-label="smiling face with hearts">😊</span> 
+            Top Emojis
+        </h2>
+        
+        <div class="emoji-grid">
+            
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="face with tears of joy">💁‍♂️</span>
+                <span class="emoji-count">5,050 uses</span>
+            </div>
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="kiss mark">😂</span>
+                <span class="emoji-count">1,574 uses</span>
+            </div>
+            
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="red heart">❤️</span>
+                <span class="emoji-count">1,404 uses</span>
+            </div>
+
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="pleading face">😎</span>
+                <span class="emoji-count">1,573 uses</span>
+            </div>
+
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="kissing face with smiling eyes">😈</span>
+                <span class="emoji-count">1,200 uses</span>
+            </div>
+            
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="woman shrugging">🔥</span>
+                <span class="emoji-count">565 uses</span>
+            </div>
+
+            
+            
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="man shrugging">😤</span>
+                <span class="emoji-count">562 uses</span>
+            </div>
+
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="relieved face">😚</span>
+                <span class="emoji-count">532 uses</span>
+            </div>
+
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="tired face">😍</span>
+                <span class="emoji-count">510 uses</span>
+            </div>
+
+            <div class="emoji-item">
+                <span class="emoji-icon" role="img" aria-label="face screaming in fear">🥺</span>
+                <span class="emoji-count">465 uses</span>
+            </div>
+
+        </div>
+    </div>
+   </div> 
+
+</div>
+<div class="bear-buttons">
+    <button id="bear-button">
+        
+        Click For more Hearts
+    </button>
+</div>
+
+
+<div class="analysis-card"><div class="love-list-container">
+    <header class="love-header">
+        <h1>Things I Love About You</h1>
+        <p>Here is a small portion of them</p>
+    </header>
+
+    <div class="love-list">
+        <div class="love-item">
+            <span class="item-icon" role="img" aria-label="Heart with rose">🌹</span>
+            <span class="item-text">YOU.</span>
+            
+        </div>
+
+        <div class="love-item">
+            <span class="item-icon" role="img" aria-label="Heart">❤️</span>
+            <span class="item-text">It amazes me how you always know the perfect words to lift my heart when I’m feeling down.</span>
+        </div>
+
+        <div class="love-item">
+            <span class="item-icon" role="img" aria-label="Pink heart">💖</span>
+            <span class="item-text">You probably already knew this even before I confessed, but I love your smile. God, you’re so incredibly cute when you smile</span>
+        </div>
+
+        <div class="love-item">
+            <span class="item-icon" role="img" aria-label="Thinking face">🤔</span>
+            <span class="item-text">I love every moment you interact with me — whether you’re teasing me, scolding me, or just gently touching me. Just knowing you’re paying attention to me means everything </span>
+        </div>
+
+        <div class="love-item">
+            <span class="item-icon" role="img" aria-label="Lemon slice">🍋</span>
+            <span class="item-text">I love the way you care for me and gently tell me what to do — it makes me feel seen, safe, and loved</span>
+        </div>
+
+        <div class="love-item">
+            <span class="item-icon" role="img" aria-label="Heart with arrow">💘</span>
+            <span class="item-text">Baby you light up my World like nobody else</span>
+        </div>
+    </div>
+</div></div>
+</main>
+
+<div class="analysis-card">
+  <div class="wheel-container-wrapper">
+    
+    <div class="wheel-header">
+      <h1>Spin to win!</h1>
+    </div>
+
+    <div class="wheel-main-area">
+      <div class="wheel-pointer"></div>
+
+      <div id="prize-wheel" class="prize-wheel">
+        <div class="slice">Kisses</div>
+        <div class="slice">Hugs</div>
+        <div class="slice">Hand Holds</div>
+        <div class="slice">Cuddles</div>
+        <div class="slice">Dates</div>
+        <div class="slice">Surprises</div>
+      </div>
+    </div>
+
+    <div class="wheel-controls">
+      <button id="spin-button" class="spin-button">Push here</button>
+      <div id="prize-message" class="prize-message">Go grab your prize!</div>
+    </div>
+
+  </div>
+</div>
+<div class="analysis-card">
+  <div class="songs-container-wrapper">
+    <header class="songs-header">
+        <h1 class="songs-title">Our songs</h1>
+    </header>
+
+    <div class="songs-list">
+ <div class="video-card">
+            <div class="video-thumbnail-container">
+                <img 
+                    src="pottu_thotta.jpg" 
+                    alt="Eminem music video thumbnail"
+                    class="video-thumbnail"
+                >
+                <div class="youtube-badge">YouTube</div>
+               <a href="https://www.youtube.com/watch?v=ftIPUowtX2Q&list=RDftIPUowtX2Q&start_radio=1" target="_blank" rel="noopener noreferrer" class="play-link">
+                    <div class="play-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div class="video-details">
+                <span class="video-title">Pottu Thotta pournami</span>
+                <span class="video-artist">Hridayam</span>
+            </div>
+        </div>
+         <div class="video-card">
+            <div class="video-thumbnail-container">
+                <img 
+                    src="laali-laali.jpg" 
+                    alt="Eminem music video thumbnail"
+                    class="video-thumbnail"
+                >
+                <div class="youtube-badge">YouTube</div>
+               
+                <a href="https://www.youtube.com/watch?v=N_s1f1IkTCA&list=RDN_s1f1IkTCA&start_radio=1" target="_blank" rel="noopener noreferrer" class="play-link">
+                    <div class="play-overlay" role="button" aria-label="Play video">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div class="video-details">
+                <span class="video-title">Laali Laali</span>
+                <span class="video-artist">Theeran adhigaram ondru</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail-container">
+                <img 
+                    src="what-makes-you-so-beautiful.jpg" 
+                    alt="Céline Dion - The Power Of Love music video thumbnail"
+                    class="video-thumbnail"
+                >
+                <div class="youtube-badge">YouTube</div>
+                <a href="https://www.youtube.com/watch?v=QJO3ROT-A4E" target="_blank" rel="noopener noreferrer" class="play-link">
+                    <div class="play-overlay" role="button" aria-label="Play video">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="video-details">
+                <span class="video-title">What makes you so beautiful</span>
+              
+                <span class="video-artist">One Direction</span>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-thumbnail-container">
+                <img 
+                    src="never-ending-story.jpg" 
+                    alt="Eminem music video thumbnail"
+                    class="video-thumbnail"
+                >
+                <div class="youtube-badge">YouTube</div>
+               <a href="https://www.youtube.com/watch?v=O5HQ1sZseKg" target="_blank" rel="noopener noreferrer" class="play-link">
+                    <div class="play-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div class="video-details">
+                <span class="video-title">Never Ending Story</span>
+                <span class="video-artist">Stranger Things</span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+  </div>
+  <div class="analysis-card">
+ <div class="carousel-container-wrapper">
+    <span class="carousel-share-icon" aria-label="Share button">⇲</span> 
+    
+    <div class="carousel-card">
+        <div class="carousel-image-container">
+            <img 
+                src="placeholder-image-1.jpg" 
+                alt="Couple sitting on a car in a field" 
+                class="carousel-image"
+            >
+            
+            <div class="photo-index">1/6</div>
+            
+            <button class="nav-arrow prev-arrow" aria-label="Previous photo">
+                <
+            </button>
+            <button class="nav-arrow next-arrow" aria-label="Next photo">
+                >
+            </button>
+            
+            <div class="swipe-hint">
+                <span class="swipe-icon">↔</span> Swipe to navigate
+            </div>
+        </div>
+    </div>
+</div> 
+</div>
+
+<div class="end"><h1>Thanks for being with me Ma!</h1></div>
+ <div id="heart-container"></div>
+
+ </main>
+ <div id="animation-container"></div>
+
+</body>
+
+  
+
+<script src="main.js" defer></script>
+ <script src="heart.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="wheel.js" defer></script>
+ <script src="chart.js" defer></script>
+</body>
+</html>

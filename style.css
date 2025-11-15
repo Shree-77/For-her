@@ -1,0 +1,1043 @@
+
+    :root{
+      
+      --text: rgb(193, 65, 101);
+      font-family: 'Anime Ace', sans-serif;
+      --topics :
+      
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Poppins", sans-serif;
+      background-color: rgb(223, 175, 182);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x:hidden;
+    }
+    
+
+.name-container {
+ font-size: 24px;
+    font-weight: 500;
+    color: #b13737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+.name-text {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.name-text h1 {
+  font-size: clamp(1.4rem, 5vw, 2.5rem);
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.name-text {
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  
+}
+.sub-title{
+  text-align: center;
+  margin: 20px;
+}
+ .card {
+    width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 24px;
+    border: 2px solid #FFB3C6;
+    box-shadow: 0 5px 15px rgba(255, 100, 140, 0.2);
+    position: relative;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .timer-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .time-box {
+    width: 110px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 4px 4px 0 rgba(210, 0, 75, 0.25);
+  }
+
+  .time-number {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .time-label {
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  /* Analysis CSS */
+  .analysis-card {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border: 2px solid rgba(255, 100, 130, 0.2);
+}
+
+.analysis-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #b3004b;
+  margin-bottom: 30px;
+}
+
+.analysis-block {
+  background: #fff;
+  border-radius: 15px;
+  padding: 18px 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border: 1.5px solid rgba(255, 200, 210, 0.5);
+  box-shadow: 0 4px 12px rgba(255, 140, 160, 0.15);
+}
+
+.icon {
+  font-size: 26px;
+}
+
+.metric-title {
+  font-size: 14px;
+  color: #444;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #b3004b;
+}
+
+.metric-sub {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+/* Bar rows */
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.bar {
+  flex: 1;
+  height: 8px;
+  background: #ffdde9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #b3004b;
+}
+
+.percent {
+  font-size: 12px;
+  color: #b3004b;
+  font-weight: 600;
+}
+
+
+.name-text {
+  opacity: 0;
+  position: absolute;
+  animation: fadeInOut 6s linear infinite;
+}
+.chart-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+
+/* Card Container */
+.top-words-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   
+    padding: 20px;
+}
+
+/* Heading */
+.top-words-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* List Reset */
+.word-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual List Item */
+.word-item {
+    display: flex;
+    justify-content: space-between; /* Pushes word to left, count to right */
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0; /* Separator line */
+    font-size: 1em;
+}
+
+.word-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+/* Word Name Styling */
+.word-name {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Word Count Styling */
+.word-count {
+    color: #666;
+    font-weight: normal;
+    background-color: #e8f5e9; /* Light background for the count bubble */
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+
+
+/* Main Card Container */
+.top-emojis-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 700px; /* A good width to accommodate 3 columns */
+    padding: 30px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card-title span {
+    margin-right: 10px;
+    font-size: 1.2em; /* Ensures the icon is slightly larger */
+}
+
+/* CSS Grid Container */
+.emoji-grid {
+    display: grid;
+    /* Create 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; /* Spacing between grid items */
+}
+
+/* Individual Emoji Card Item */
+.emoji-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Subtle shadow to match the screenshot's depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    height: 100px; /* Uniform height for a clean grid */
+    text-align: center;
+}
+
+/* Emoji Icon Styling */
+.emoji-icon {
+    font-size: 2.5em; /* Make the emoji prominent */
+    margin-bottom: 5px;
+}
+
+/* Usage Count Styling */
+.emoji-count {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 500;
+}
+
+
+/* Show each text only in its own time slot */
+.name-text:nth-child(1) {
+  animation-delay: 0s;
+}
+.name-text:nth-child(2) {
+  animation-delay: 2s;
+}
+.name-text:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  45% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+#heart-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+  animation: floatUp 2s linear forwards;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  left: -10px;
+}
+
+.heart::after {
+  top: -10px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+ main{min-height:100vh;}
+ 
+ 
+ /* Bear Button Styles */
+ /* The Button Styling */
+
+.bear-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#bear-button {
+    padding: 15px 30px;
+    font-size: 1.25em;
+    font-weight: bold;
+   
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: transform 0.1s, box-shadow 0.1s;
+    position: relative;
+    
+     background: color-mix(in srgb, white 80%, rgb(159, 18, 57));
+    border-color: rgb(159, 18, 57);
+    color: rgb(159, 18, 57);
+    box-shadow: rgba(159, 18, 57, 0.125) 0px 4px 6px -1px, rgba(159, 18, 57, 0.063) 0px 2px 4px -1px
+}
+
+#bear-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heart-icon {
+    margin-right: 10px;
+    font-size: 1em;
+    animation: pulse 1.5s infinite; /* Optional: adds a pulse effect to the heart */
+}
+
+/* Keyframes for the button heart pulse */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* --- Animation Elements Styling --- */
+
+/* Parent container for animated elements (must be relative to body) */
+#animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+
+/* The individual animated particle (bear) */
+.particle {
+  position: absolute;
+  pointer-events: none;
+  font-size: 36px; /* BIGGER BEARS */
+  opacity: 1; /* MAX VISIBLE */
+  transform: translate(-50%, -50%);
+}
+
+
+/* Keyframes for the explosion effect */
+@keyframes explode-and-fade {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--end-x), var(--end-y)) scale(0.3);
+  }
+}
+
+/* Things i love about you section */
+.love-list-container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+   
+    
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+/* --- Header Styling --- */
+.love-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.love-header h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #880e4f; /* Darker berry color */
+    margin: 0 0 5px 0;
+}
+
+.love-header p {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    margin: 0;
+}
+
+.share-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: #880e4f;
+    cursor: pointer;
+}
+
+/* --- List Items (The Cards) --- */
+.love-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between the list items */
+}
+
+.love-item {
+    background-color: #ffffff;
+    border: 1px solid #ffccd9; /* Soft pink border */
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    
+    /* Flexbox for inner alignment */
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 1.4;
+}
+
+.item-icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+    /* Optional: Slightly adjust specific icon colors if needed */
+    /* .love-item:nth-child(1) .item-icon { color: #880e4f; } */
+}
+
+.item-text {
+    flex-grow: 1; /* Allows the text to take up the remaining space */
+    font-size: 1em;
+    color: #444;
+}
+
+.wheel-container-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wheel-header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.wheel-main-area {
+  position: relative;
+  display: inline-block;
+}
+
+.prize-wheel {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 8px solid #333;
+  position: relative;
+  overflow: hidden;
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0, 1);
+}
+
+.wheel-pointer {
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 25px solid red;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prize-wheel .slice {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 0;
+  transform-origin: 0% 100%;
+  background: #ffd66b;
+  border: 1px solid #fff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.prize-wheel .slice:nth-child(1) { transform: rotate(0deg);   background: #ffa5a5; }
+.prize-wheel .slice:nth-child(2) { transform: rotate(60deg);  background: #ffcd73; }
+.prize-wheel .slice:nth-child(3) { transform: rotate(120deg); background: #9effba; }
+.prize-wheel .slice:nth-child(4) { transform: rotate(180deg); background: #8ecbff; }
+.prize-wheel .slice:nth-child(5) { transform: rotate(240deg); background: #d4b3ff; }
+.prize-wheel .slice:nth-child(6) { transform: rotate(300deg); background: #f9b3ff; }
+
+.spin-button {
+  margin-top: 18px;
+  padding: 10px 25px;
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.prize-message {
+  margin-top: 15px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+/* ------- SLICE STYLING ------- */
+.slice {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* VIdeoes
+
+.songs-container-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    position: relative;
+}
+
+/* --- Header and Title --- */
+.songs-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.songs-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #880e4f;
+    margin: 0;
+}
+
+.share-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: #880e4f;
+    cursor: pointer;
+}
+
+/* --- Video Card Styling --- */
+.songs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.video-card {
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Important to contain the rounded image */
+}
+
+/* --- Thumbnail and Overlay --- */
+.video-thumbnail-container {
+    position: relative;
+    width: 100%;
+    /* Creates a 16:9 aspect ratio based on the image's height */
+    padding-top: 56.25%; 
+    height: 0; 
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* YouTube Badge */
+.youtube-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+/* Play Button Overlay */
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.play-icon {
+    color: #ff0000;
+    font-size: 1.5em;
+    padding-left: 5px; /* Adjust triangle to look centered */
+}
+
+/* --- Video Details (Text Section) --- */
+.video-details {
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+}
+
+.video-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #444;
+    flex-basis: auto; /* Allow title to wrap */
+}
+
+.video-artist {
+    font-size: 0.9em;
+    color: #888;
+    flex-basis: 100%; /* Ensure artist name is on a new line */
+}
+
+.details-heart {
+    font-size: 1.2em;
+    color: #880e4f;
+}
+
+/* --- Floating Hearts (Visual Flair) --- */
+
+/* Hearts around the card in the Eminem video */
+.floating-hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-hearts span {
+    position: absolute;
+    font-size: 1.5em;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.heart-1 { top: 5%; left: 5%; animation-delay: 0.2s; }
+.heart-2 { top: 40%; right: 5%; animation-delay: 0.5s; }
+.heart-3 { bottom: 10%; left: 30%; animation-delay: 0.8s; }
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    100% { transform: scale(1.1); opacity: 1; }
+}
+
+.carousel-container-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Max width for the card */
+    padding: 20px;
+    margin: 30px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.carousel-share-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #880e4f;
+    cursor: pointer;
+    z-index: 20; /* Ensure it's above the image */
+}
+
+/* --- Image and Positioning --- */
+.carousel-image-container {
+    position: relative;
+    width: 100%;
+    /* Create a square aspect ratio (adjust as needed, 100% height is common) */
+    padding-top: 100%; 
+    height: 0; 
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Index Counter (1/6) --- */
+.photo-index {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* --- Navigation Arrows --- */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s;
+}
+
+.nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.prev-arrow {
+    left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.next-arrow {
+    right: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* --- Swipe Hint Footer --- */
+.swipe-hint {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px 10px 0 0;
+    font-size: 0.9em;
+    z-index: 10;
+}
+
+.swipe-icon {
+    margin-right: 5px;
+}
+
+/* --- Decorative Hearts (Page background flair) --- */
+.carousel-container-wrapper::before, 
+.carousel-container-wrapper::after {
+    content: "❤️";
+    font-size: 2em;
+    position: absolute;
+    z-index: -1;
+    animation: gentleFloat 4s infinite alternate;
+}
+
+.carousel-container-wrapper::before {
+    top: 10%;
+    left: -20px;
+    font-size: 1.5em;
+    animation-delay: 0.5s;
+}
+
+.carousel-container-wrapper::after {
+    bottom: 5%;
+    right: -20px;
+    font-size: 2.2em;
+    animation-delay: 1.2s;
+}
+
+@keyframes gentleFloat {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
+}
+.end{
+  text-align: center;
+}
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .card,
+  .analysis-card,
+  .love-list-container,
+  .songs-container-wrapper,
+  .carousel-container-wrapper {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .section-title,
+  .analysis-title,
+  .wheel-header h1 {
+    font-size: 22px;
+  }
+
+  .time-box {
+    width: 80px;
+    padding: 10px;
+  }
+
+  .time-number {
+    font-size: 24px;
+  }
+
+  .top-emojis-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .emoji-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 → 2 columns */
+  }
+
+  .prize-wheel {
+    width: 200px;
+    height: 200px;
+  }
+
+  .slice {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+
+  #bear-button {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+
+  .video-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .video-title {
+    font-size: 1em;
+  }
+
+  .video-artist {
+    font-size: 0.8em;
+  }
+
+  .love-item {
+    padding: 12px 14px;
+    font-size: 0.9em;
+  }
+
+  .item-icon {
+    font-size: 1.2em;
+  }
+
+  .wheel-container-wrapper {
+    transform: scale(0.9);
+  }
+
+  .chart-wrapper canvas {
+    max-width: 100%;
+  }
+}
+
+   
