@@ -903,33 +903,9 @@
     border-radius: 5px 0 0 5px;
 }
 
-/* --- Swipe Hint Footer --- */
-.swipe-hint {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 8px 15px;
-    border-radius: 10px 10px 0 0;
-    font-size: 0.9em;
-    z-index: 10;
-}
 
-.swipe-icon {
-    margin-right: 5px;
-}
 
-/* --- Decorative Hearts (Page background flair) --- */
-.carousel-container-wrapper::before, 
-.carousel-container-wrapper::after {
-    content: "❤️";
-    font-size: 2em;
-    position: absolute;
-    z-index: -1;
-    animation: gentleFloat 4s infinite alternate;
-}
+
 
 .carousel-container-wrapper::before {
     top: 10%;
